@@ -1,0 +1,199 @@
+/*
+  Khai-Huy Alex Nguyen
+  October 13th, 2024
+
+  These are the styles for Epic Music Box.
+  It is designed to be fun, colorful, and attractive.
+*/
+
+body {
+  background-color: rgb(235, 238, 255);
+  font-family: "Poppins", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+a, .grid > div > p {
+  background-color: white;
+}
+
+a, .grid > div {
+  transition: 0.5s;
+}
+
+a, img, .grid > div, #controls .grid > div > p, #chord-type > .grid > div > p {
+  border-radius: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 5px;
+  box-shadow: 0px 0px 2px 2px rgb(217, 217, 217);
+}
+
+a:hover {
+  box-shadow: 0px 0px 2px 2px rgb(109, 109, 109);
+}
+
+img, .grid {
+  width: 100%;
+}
+
+#portrait {
+  width: 30%;
+}
+
+#piano {
+  width: 20%;
+}
+
+footer, section {
+  margin-top: 30px;
+}
+
+li {
+  margin: 10px;
+}
+
+footer {
+  margin-bottom: 30px;
+}
+
+#controls > .grid, #chord-type > .grid {
+  grid-auto-rows: minmax(40px, auto);
+}
+
+#controls > .grid > div, #chord-type > .grid > div {
+  background-color: rgb(255, 255, 255);
+}
+
+#controls > .grid > div.disabled > p, #controls > .grid > div.disabled {
+  background-color: rgb(219, 219, 219);
+  color: rgb(187, 187, 187);
+}
+
+#controls > .grid > div.disabled:hover {
+  rotate: 0deg;
+  box-shadow: 2px 2px 2px 2px rgb(143, 143, 143);
+}
+
+#editor .grid {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+#editor .grid > div {
+  flex-grow: 1;
+  min-width: 20%;
+  max-width: 23.7%;
+  height: 100px;
+}
+
+#chord-type .grid .selected, #editor .grid > div.selected {
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid > div {
+  box-shadow: 2px 2px 2px 2px rgb(143, 143, 143);
+  padding: 0;
+}
+
+.grid > div:hover {
+  rotate: 1deg;
+  box-shadow: 2px 2px 6px 6px rgb(143, 143, 143);
+}
+
+.grid > div > p {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.top-left, .top-mid-l, .top-mid-r, .top-right {
+  grid-row: 1;
+}
+
+.mid-left, .mid-mid-l, .mid-mid-r, .mid-right {
+  grid-row: 2;
+}
+
+.bot-left, .bot-mid-l, .bot-mid-r, .bot-right {
+  grid-row: 3;
+}
+
+.top-left, .mid-left, .bot-left {
+  grid-column: 1;
+}
+
+.top-mid-l, .mid-mid-l, .bot-mid-l {
+  grid-column: 2;
+}
+
+.top-mid-r, .mid-mid-r, .bot-mid-r {
+  grid-column: 3;
+}
+
+.top-right, .mid-right, .bot-right {
+  grid-column: 4;
+}
+
+.top-left, .c {
+  background-color: rgb(255, 160, 160);
+}
+
+.top-mid-l, .db {
+  background-color: rgb(255, 190, 160);
+}
+
+.top-mid-r, .d {
+  background-color: rgb(255, 222, 160);
+}
+
+.top-right, .eb {
+  background-color: rgb(255, 255, 160);
+}
+
+.mid-left, .e {
+  background-color: rgb(208, 255, 181);
+}
+
+.mid-mid-l, .f {
+  background-color: rgb(181, 255, 214);
+}
+
+.mid-mid-r, .gb {
+  background-color: rgb(181, 245, 255);
+}
+
+.mid-right, .g {
+  background-color: rgb(181, 206, 255);
+}
+
+.bot-left, .ab {
+  background-color: rgb(190, 181, 255);
+}
+
+.bot-mid-l, .a {
+  background-color: rgb(227, 181, 255);
+}
+
+.bot-mid-r, .bb {
+  background-color: rgb(255, 181, 225);
+}
+
+.bot-right, .b {
+  background-color: rgb(255, 181, 203);
+}

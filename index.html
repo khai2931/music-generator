@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+  Khai-Huy Alex Nguyen
+  October 13th, 2024
+
+  Epic Music Box is a fun, neat music generation tool.
+  It incorporates music theory and JS functionality to create and play chord progressions.
+  Music generation is provided by https://tonejs.github.io/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="http://unpkg.com/tone"></script>
+    <script src="index.js"></script>
+    <title>Epic Music Box</title>
+  </head>
+  <body>
+    <header>
+      <h1>Epic Music Box</h1>
+    </header>
+
+    <main>
+      <section id="controls">
+        <div class="grid">
+          <div id="random" class="top-left"><p>Add random nice chord</p></div>
+          <div id="play" class="top-mid-l"><p>Play</p></div>
+          <div id="stop" class="top-mid-r disabled"><p>Stop</p></div>
+          <div id="repeat" class="top-right"><p>Repeat: <span id="repeat-tog">off</span></p></div>
+        </div>
+      </section>
+
+      <section id="editor">
+        <h2>Editor</h2>
+        <p><em>Click on some chords below to add them here!</em></p>
+        <div class="grid">
+        </div>
+      </section>
+
+      <section id="chord-type">
+        <h2>Chord Type</h2>
+        <div class="grid">
+          <div class="top-left"><p>Major</p></div>
+          <div class="top-mid-l"><p>Minor</p></div>
+          <div class="top-mid-r"><p>Major 7th</p></div>
+          <div class="top-right"><p>Minor 7th</p></div>
+          <div class="mid-left"><p>Diminished</p></div>
+          <div class="mid-mid-l"><p>Augmented</p></div>
+          <div class="mid-mid-r"><p>Diminished 7th</p></div>
+          <div class="mid-right"><p>Minor-major</p></div>
+          <div class="bot-left"><p>Major 9th</p></div>
+          <div class="bot-mid-l"><p>Minor 9th</p></div>
+          <div class="bot-mid-r"><p>Sus2</p></div>
+          <div class="bot-right"><p>Sus4</p></div>
+        </div>
+      </section>
+
+      <section id="selector">
+        <h2>Chord</h2>
+        <div class="grid">
+          <div class="top-left c"><p>
+            <span class="root">C</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="top-mid-l db"><p>
+            <span class="root">Db</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="top-mid-r d"><p>
+            <span class="root">D</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="top-right eb"><p>
+            <span class="root">Eb</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="mid-left e"><p>
+            <span class="root">E</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="mid-mid-l f"><p>
+            <span class="root">F</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="mid-mid-r gb"><p>
+            <span class="root">Gb</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="mid-right g"><p>
+            <span class="root">G</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="bot-left ab"><p>
+            <span class="root">Ab</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="bot-mid-l a"><p>
+            <span class="root">A</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="bot-mid-r bb"><p>
+            <span class="root">Bb</span> <span class="chord-type"></span>
+          </p></div>
+          <div class="bot-right b"><p>
+            <span class="root">B</span> <span class="chord-type"></span>
+          </p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Copyright © 2024 Khai-Huy Alex Nguyen. All Rights Reserved.
+    </footer>
+  </body>
+</html>

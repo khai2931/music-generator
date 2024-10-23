@@ -26,7 +26,7 @@ https://music-generator-8y79.onrender.com/
 - You can stack extra extra notes with `.[note].[note]`
 - For example:
 - `C min6, F min6, C minmaj, F min6.G5, G min7no5add2, F min7no5add2, G min7, F min7, C min6.C.D.B`
-- 'Cb maj, F# min'
+- `Cb maj, F# min`
 
 ### Chords Supported (in Python)
 - maj

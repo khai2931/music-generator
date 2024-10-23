@@ -19,7 +19,7 @@ https://music-generator-8y79.onrender.com/
 - any chord sequence you desire, see below for syntax:
 
 ### Chord Syntax
-- Syntax for individual chord chord is `[root note] [chord type].[optional extra notes]`
+- Syntax for individual chord is `[root note] [chord type].[optional extra notes]`
 - Use commas to separate chords
 - Both sharps (#) and flats (b) are allowed
 - You can specify the octave in extra notes
